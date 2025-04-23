@@ -1,4 +1,3 @@
-// lib/src/colors/palette.dart
 import 'package:flutter/material.dart';
 import 'oklch_color.dart';
 

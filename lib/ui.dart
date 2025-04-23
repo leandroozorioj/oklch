@@ -1,4 +1,3 @@
-// lib/src/ui/theme.dart
 import 'package:flutter/material.dart';
 import '../src/colors/palette.dart';
 import '../src/ui/styles/tailwind_styles.dart';

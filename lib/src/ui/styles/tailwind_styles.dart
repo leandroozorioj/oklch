@@ -1,6 +1,4 @@
-// lib/src/ui/styles/tailwind_styles.dart
 import 'package:flutter/material.dart';
-import '../../colors/palette.dart';
 
 /// Um sistema de estilos inspirado no TailwindCSS para Flutter.
 class TailwindStyles {

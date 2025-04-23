@@ -1,7 +1,5 @@
-// lib/src/ui/components/card.dart
 import 'package:flutter/material.dart';
 import '../styles/tailwind_styles.dart';
-import '../../colors/palette.dart';
 
 /// Um card estilizado seguindo a estética do TailwindUI.
 class TwCard extends StatelessWidget {

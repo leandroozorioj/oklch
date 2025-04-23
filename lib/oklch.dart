@@ -1,4 +1,3 @@
-// lib/flutter_oklch.dart
 library oklch;
 
 // Exporta as classes de cores
