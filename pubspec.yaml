@@ -1,8 +1,8 @@
 name: oklch
 description: "A new Flutter package project."
 version: 0.0.4
-homepage:
-repository:
+homepage: https://github.com/leandroozorioj/oklch
+repository: https://github.com/leandroozorioj/oklch/
 
 environment:
   sdk: ^3.7.2
