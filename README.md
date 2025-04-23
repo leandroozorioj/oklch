@@ -1,4 +1,4 @@
-# OKLCH
+# Canary OKLCH
 
 Um pacote Flutter que oferece uma biblioteca de cores com suporte para conversão do espaço de cores OKLCH P3 para cores do Flutter, além de uma biblioteca de UI similar ao TailwindCSS e TailwindUI.
 
@@ -12,11 +12,11 @@ Um pacote Flutter que oferece uma biblioteca de cores com suporte para conversã
 
 ## Instalação
 
-Adicione `oklch` ao seu `pubspec.yaml`:
+Adicione `canary_oklch` ao seu `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  oklch: ^0.1.0
+  canary_oklch: ^0.1.0
 ```
 
 ## Uso
@@ -24,7 +24,7 @@ dependencies:
 ### Importação
 
 ```dart
-import 'package:oklch/oklch.dart';
+import 'package:canary_oklch/canary_oklch.dart';
 ```
 
 ### Cores OKLCH

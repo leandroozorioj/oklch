@@ -1,4 +1,4 @@
-library oklch;
+library canary_oklch;
 
 // Exporta as classes de cores
 export 'src/colors/oklch_color.dart';
