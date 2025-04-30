@@ -1,60 +1,60 @@
 # Canary OKLCH
 
-Um pacote Flutter que oferece uma biblioteca de cores com suporte para conversão do espaço de cores OKLCH P3 para cores do Flutter, além de uma biblioteca de UI similar ao TailwindCSS e TailwindUI.
+A Flutter package that provides a color library with support for converting OKLCH P3 color space to Flutter colors, plus a UI library similar to TailwindCSS and TailwindUI.
 
-## Recursos
+## Features
 
-- Conversão entre espaço de cores OKLCH e Flutter Color
-- Paleta de cores completa inspirada no TailwindCSS
-- Sistema de estilos baseados no TailwindCSS
-- Componentes de UI estilizados como TailwindUI
-- Tema completo para Flutter baseado no TailwindCSS
+- Conversion between OKLCH color space and Flutter Color
+- Complete color palette inspired by TailwindCSS
+- Style system based on TailwindCSS
+- Styled UI components like TailwindUI
+- Complete theme for Flutter based on TailwindCSS
 
-## Instalação
+## Installation
 
-Adicione `canary_oklch` ao seu `pubspec.yaml`:
+Add `canary_oklch` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
   canary_oklch: ^0.1.0
 ```
 
-## Uso
+## Usage
 
-### Importação
+### Import
 
 ```dart
 import 'package:canary_oklch/canary_oklch.dart';
 ```
 
-### Cores OKLCH
+### OKLCH Colors
 
-Você pode criar cores OKLCH e convertê-las para Flutter:
+You can create OKLCH colors and convert them to Flutter:
 
 ```dart
-// Criar uma cor OKLCH
+// Create an OKLCH color
 final oklchColor = OklchColor(0.7, 0.2, 240);
 
-// Converter para Flutter Color
+// Convert to Flutter Color
 final flutterColor = oklchColor.toColor();
 
-// Converter de Flutter Color para OKLCH
+// Convert from Flutter Color to OKLCH
 final backToOklch = OklchColor.fromColor(flutterColor);
 ```
 
-### Paleta de Cores
+### Color Palette
 
-O pacote inclui uma paleta de cores completa inspirada no TailwindCSS:
+The package includes a complete color palette inspired by TailwindCSS:
 
 ```dart
-// Acessar cores da paleta
+// Access palette colors
 final blueColor = OklchPalette.blue[500];
 final redColor = OklchPalette.red[600];
 ```
 
-### Tema TailwindCSS
+### TailwindCSS Theme
 
-Aplique o tema TailwindCSS ao seu aplicativo:
+Apply the TailwindCSS theme to your application:
 
 ```dart
 MaterialApp(
@@ -65,29 +65,29 @@ MaterialApp(
 )
 ```
 
-### Componentes UI
+### UI Components
 
-#### Botões
+#### Buttons
 
 ```dart
 TwButton(
-  label: 'Botão Primário',
+  label: 'Primary Button',
   onPressed: () {
-    // Fazer algo
+    // Do something
   },
 )
 
 TwButton(
-  label: 'Com Ícone',
+  label: 'With Icon',
   icon: Icons.check,
   variant: 'success',
   onPressed: () {},
 )
 ```
 
-Variantes disponíveis: `primary`, `secondary`, `outline`, `ghost`, `danger`, `success`.
+Available variants: `primary`, `secondary`, `outline`, `ghost`, `danger`, `success`.
 
-Tamanhos disponíveis: `xs`, `sm`, `md`, `lg`, `xl`.
+Available sizes: `xs`, `sm`, `md`, `lg`, `xl`.
 
 #### Cards
 
@@ -97,8 +97,8 @@ TwCard(
   shadow: 'md',
   child: Column(
     children: [
-      Text('Título do Card'),
-      Text('Conteúdo do card aqui...'),
+      Text('Card Title'),
+      Text('Card content here...'),
     ],
   ),
 )
@@ -108,50 +108,50 @@ TwCard(
 
 ```dart
 TwBadge(
-  text: 'Novo',
+  text: 'New',
   variant: 'green',
   rounded: true,
 )
 ```
 
-Variantes disponíveis: `gray`, `red`, `yellow`, `green`, `blue`, `indigo`, `purple`, `pink`.
+Available variants: `gray`, `red`, `yellow`, `green`, `blue`, `indigo`, `purple`, `pink`.
 
-#### Campos de Entrada
+#### Input Fields
 
 ```dart
 TwInput(
-  label: 'Nome',
-  placeholder: 'Digite seu nome',
-  helperText: 'Este campo é obrigatório',
+  label: 'Name',
+  placeholder: 'Enter your name',
+  helperText: 'This field is required',
   controller: _textController,
 )
 
 TwInput(
-  label: 'Senha',
+  label: 'Password',
   obscureText: true,
   suffixIcon: Icons.visibility,
   onSuffixIconTap: () {
-    // Alternar visibilidade da senha
+    // Toggle password visibility
   },
 )
 ```
 
-### Sistema de Estilos
+### Style System
 
-O pacote também fornece um sistema de estilos completo inspirado no TailwindCSS:
+The package also provides a complete style system inspired by TailwindCSS:
 
 ```dart
-// Acessar valores de espaçamento
+// Access spacing values
 final padding = TailwindStyles.spacing['4']; // 16.0
 
-// Criar estilos de texto
+// Create text styles
 final textStyle = TailwindStyles.getTextStyle(
   size: 'lg',
   weight: 'bold',
   color: OklchPalette.blue[600],
 );
 
-// Criar decorações de caixa
+// Create box decorations
 final boxDecoration = TailwindStyles.getBoxDecoration(
   backgroundColor: OklchPalette.gray[100],
   borderRadius: 'lg',
@@ -159,14 +159,14 @@ final boxDecoration = TailwindStyles.getBoxDecoration(
 );
 ```
 
-## Exemplos
+## Examples
 
-Veja a pasta de exemplos para um aplicativo de demonstração completo mostrando todos os componentes e recursos.
+See the examples folder for a complete demo application showing all components and features.
 
-## Contribuições
+## Contributions
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
-## Licença
+## License
 
-Este pacote é licenciado sob a licença MIT.
+This package is licensed under the MIT license.
