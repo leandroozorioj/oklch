@@ -1,6 +1,6 @@
 name: canary_oklch
 description: A Flutter package for working with OKLCH color space, providing utilities for color conversion, palette generation, and UI components with OKLCH color support.
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/leandroozorioj/oklch
 repository: https://github.com/leandroozorioj/oklch/
 
